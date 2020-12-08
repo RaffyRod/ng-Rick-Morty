@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let character of characters">
-    <div class="card">
+    <div class="card pb-3 mt-4">
       <div class="image">
         <a [routerLink]="['/character-details', character.id]">
             <img [src]="character.image"
@@ -8,8 +8,8 @@
             class="card-img-top">
         </a>
       </div>
-      <div class="card-inner">
-        <div class="header">
+      <div class="card-inner pl-2">
+        <div class="header pl-2">
           <a [routerLink]="['/character-details', character.id]">
           <h2>{{character.name | slice: 0:15}}</h2>
         </a>
