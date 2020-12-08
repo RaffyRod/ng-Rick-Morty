@@ -1,6 +1,7 @@
 <div class="row justify-content-center" *ngIf="character$ | async as character">
   <div class="col-xs-12 col-sm-6 col-md-6 justify-content-center">
-    <div class="card pb-3 mt-4">
+    <app-character [character]="character"></app-character>
+    <!-- <div class="card pb-3 mt-4">
       <div class="image">
            <img [src]="character.image"
             [alt]="character.name"
@@ -13,7 +14,7 @@
         <small class="text-muted"> {{character.created | date}}</small>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>
 
